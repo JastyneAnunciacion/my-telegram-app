@@ -1,0 +1,238 @@
+* {
+    text-decoration: none;
+    color: white;
+    font-family: "Noto Sans", sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none; 
+}
+
+body {
+    background-color: black;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-top: 0px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #303030; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4b4b4b;
+    border-radius: 12px;
+}
+
+
+.headerNavBarDiv {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(8px);
+    height: 60px;
+    width: 100%;
+    position: fixed;
+}
+
+.headerLeftSideDiv ul {
+    padding-top: 5px;
+}
+
+.headerAppName {
+    list-style: none;
+    position: relative;
+    bottom: 12px;
+    padding-left: 2px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.headerLeftSideDiv ul li {
+    display: inline-block;
+}
+
+.headerMainLogo img {
+    height: 40px;
+    width: auto;
+    margin-left: -40px;
+}
+
+.headerRightSideDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.headerRightSideDiv ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.headerWalletDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    bottom: 15px;
+    background-color: rgb(128, 128, 128, 0.25);
+    padding-left: 10px;
+    height: 20px;
+    border-radius: 40px;
+
+}
+
+.headerWalletDiv img {
+    height: 40px;
+    width: auto;
+}
+
+.headerProfile img {
+    height: 40px;
+    width: auto;
+    padding-right: 30px;
+}
+
+.footerNavBarDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80px;
+    width: 98.25%;
+    position: fixed;
+    bottom: 10px;
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+}
+
+.footerNavBarDiv a
+ {
+    border: 1px solid;
+    position: relative;
+    height: 40px;
+    width: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+    background-size: cover;
+    bottom: 10px;
+}
+
+.footerPlayButton {
+    background-image: url(images/gamepad_351157.png);
+}
+
+.footerWalletButton {
+    background-image: url(images/wallet_1027927.png);
+}
+
+.footerButtonText {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+}
+
+.mainHeadingText {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.subHeadingText {
+    color: rgb(121, 121, 121);
+    font-size: 15px;
+    line-height: 16px;
+}
+
+.welcomeMessage {
+    padding-top: 65px;
+    line-height: 7px;
+}
+
+.buttonSorter button {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border-style: dashed;
+    border: 1px solid;
+    font-weight: bold;
+    border-radius: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.buttonSorter .buttonSorterHighlighted {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.listOfGames {
+    padding-bottom: 70px;
+}
+
+.gameCard {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.gameCard ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+
+.gameCard ul li img {
+    width: 60px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.gameCardTextInfo {
+    line-height: 5px;
+    text-align: left;
+    flex-grow: 1;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.gameCardTextInfo .mainHeadingText {
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+
+.gameCardTextInfo .subHeadingText {
+    margin-top: 10px;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.gameCard ul li button {
+    background-color: rgb(21, 123, 206);
+    width: 80px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}

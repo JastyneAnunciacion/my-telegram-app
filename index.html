@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />    <title>Game Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">            
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="headerNavBarDiv">
+                <div class="headerLeftSideDiv">
+                    <ul>
+                        <li class="headerMainLogo"><a href="#"><img src="images/pngegg.png" alt="Header Main Logo"></li>
+                        <li class="headerAppName">App Name</li>
+                    </ul>
+                </div>
+                <div class="headerRightSideDiv">
+                    <ul>
+                        <li>
+                            <div class="headerWalletDiv">
+                                $0.00
+                                <img src="images/dollar-sign-image.png" alt="Wallet Logo">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="headerWalletDiv">
+                                $0.00
+                                <img src="images/dollar-sign-image.png" alt="Wallet Logo">
+                            </div>
+                        </li>
+                        <li class="headerProfile"><a href="#"><img src="images/blank-account-icon.png" alt="Profile Icon"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="welcomeMessage">
+        <p class="mainHeadingText">Beat your friends and win cash!</p>
+        <p class="subHeadingText">Select & send game to challenge friends</p>
+    </div>
+    <div class="buttonSorter">
+        <button class="buttonSorterHighlighted" id="button1" onclick="highlightButton('button1')">TRENDING</button>
+        <button id="button2" onclick="highlightButton('button2')">LAST PLAYED</button>
+    </div>
+    <div class="listOfGames"></div>
+    <footer>
+        <nav>
+            <div class="footerNavBarDiv">
+                <a href="#" class="footerPlayButton"><span class="footerButtonText">Play</span></a>
+                <a href="#" class="footerWalletButton"><span class="footerButtonText">Wallet</span></a>
+            </div>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
