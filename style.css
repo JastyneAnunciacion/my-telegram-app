@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: rgb(6, 22, 0);
     padding-left: 4px;
     padding-right: 4px;
     margin-top: 0px;
@@ -34,7 +34,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(30px);
     height: 60px;
     width: 100%;
     flex-shrink: 1;
@@ -119,7 +119,7 @@ body {
     position: fixed;
     bottom: 10px;
     border-radius: 15px;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(30px);
 }
 
 .footerNavBarDiv a
@@ -190,6 +190,7 @@ body {
     color: black;
 }
 
+/* 
 .listOfGames {
     padding-bottom: 70px;
 }
@@ -235,7 +236,7 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-}
+} 
 
 .gameCard ul li button {
     background-color: rgb(21, 123, 206);
@@ -245,4 +246,70 @@ body {
     border: none;
     font-weight: bold;
     cursor: pointer;
+} */
+
+.tempImg{
+    background-color: gray;
+    height: 1em;
+    width: 1em;
+    position: relative;
+    top: 0.25em;
+}
+
+.gameListHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.gameListButtons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75em;
+}
+
+.gameListButtons button{
+    background-color: rgb(2, 71, 48);
+    border: 0px;
+    border-radius: 5px;
+    padding-left: 0.65em;
+    padding-right: 0.65em;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.gameList {
+    padding-bottom: 70px;
+    display: flex;
+    overflow: scroll;
+    gap: 1em;
+    overflow-y: hidden;
+    padding-bottom: 1em;
+    overflow-x: auto;
+    margin-bottom: 1em;
+    padding-left: 0em;
+}
+
+.gameList::-webkit-scrollbar {
+    height: 0.5em; 
+}
+
+.gameCard {
+    height: 250px;
+    width: 150px;
+    flex-shrink: 0;
+}
+
+.gameCard li {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+}
+
+.gameCard img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
 }

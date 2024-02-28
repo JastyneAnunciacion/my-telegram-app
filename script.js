@@ -102,8 +102,8 @@ function getIcon(index)
 }
 // Temporary
 
-function generateGameCards() {
-    var gameContainer = document.querySelector('.listOfGames');
+function generateGameCards(listOfGames) {
+    var gameContainer = document.querySelector(listOfGames);
     var i = 1;
 
     games.forEach(function(game) {
@@ -111,20 +111,30 @@ function generateGameCards() {
         gameCard.classList.add('gameCard');
 
         var cardContent = `
-        <ul>
-            <li><img src="${getIcon(i)}" alt="Game Icon"></li>
-            <li class="gameCardTextInfo">
-                <p class="mainHeadingText">${game.title + " " + i}</p>
-                <p class="subHeadingText">${getRandomDescription()}</p>
-            </li>
-            <li><button>Play</button></li>
-        </ul>
+             <li><img src="${getIcon(i)}" alt="Game Icon"></li>
         `;
 
         gameCard.innerHTML = cardContent;
         gameContainer.appendChild(gameCard);
         i++;
     });
+}
+
+function scrollList(buttonDir, listToScroll) {
+    var scrollValue = 300;
+    var list = document.getElementById(listToScroll);
+    if (buttonDir == "right") {
+        list.scrollTo({
+            left: list.scrollLeft + scrollValue,
+            behavior: 'smooth'
+        });
+    } 
+    else {
+        list.scrollTo({
+            left: list.scrollLeft - scrollValue,
+            behavior: 'smooth'
+        });
+    }
 }
 
 function highlightButton(buttonId) {
@@ -138,4 +148,6 @@ function highlightButton(buttonId) {
     button.classList.add('buttonSorterHighlighted');
 }
 
-generateGameCards();
+generateGameCards('#recentlyPlayed');
+generateGameCards('#topGames');
+generateGameCards('#trendingGames');

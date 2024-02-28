@@ -39,11 +39,48 @@
         <p class="mainHeadingText">Beat your friends and win cash!</p>
         <p class="subHeadingText">Select & send game to challenge friends</p>
     </div>
-    <div class="buttonSorter">
-        <button class="buttonSorterHighlighted" id="button1" onclick="highlightButton('button1')">TRENDING</button>
-        <button id="button2" onclick="highlightButton('button2')">LAST PLAYED</button>
+    <div>
+        <div class="gameListHeader">
+            <div style="display: flex; gap: 0.5em">
+                <div class="tempImg"></div>
+                Recently Played
+            </div>
+            <div class="gameListButtons">
+                <button>View All</button>
+                <button onclick="scrollList('left', 'recentlyPlayed')">&lt;</button>
+                <button onclick="scrollList('right', 'recentlyPlayed')">&gt;</button>
+            </div>
+        </div>
+        <ul class="gameList" id="recentlyPlayed"></ul>
     </div>
-    <div class="listOfGames"></div>
+    <div>
+        <div class="gameListHeader">
+            <div style="display: flex; gap: 0.5em">
+                <div class="tempImg"></div>
+                Top Games
+            </div>
+            <div class="gameListButtons">
+                <button >View All</button>
+                <button id="left">&lt;</button>
+                <button id="right">&gt;</button>
+            </div>
+        </div>
+        <ul class="gameList" id="topGames"></ul>
+    </div>
+    <div>
+        <div class="gameListHeader">
+            <div style="display: flex; gap: 0.5em">
+                <div class="tempImg"></div>
+                Trending Games
+            </div>
+            <div class="gameListButtons">
+                <button >View All</button>
+                <button id="left">&lt;</button>
+                <button id="right">&gt;</button>
+            </div>
+        </div>
+        <ul class="gameList" id="trendingGames"></ul>
+    </div>
     <footer>
         <nav>
             <div class="footerNavBarDiv">
