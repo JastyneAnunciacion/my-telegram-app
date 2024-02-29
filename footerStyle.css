@@ -1,0 +1,41 @@
+.footerNavBarDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80px;
+    width: 98.25%;
+    position: fixed;
+    bottom: 10px;
+    border-radius: 15px;
+    backdrop-filter: blur(30px);
+}
+
+.footerNavBarDiv a
+ {
+    border: 1px solid;
+    position: relative;
+    height: 40px;
+    width: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+    background-size: cover;
+    bottom: 10px;
+}
+
+.footerPlayButton {
+    background-image: url(images/gamepad_351157.png);
+}
+
+.footerWalletButton {
+    background-image: url(images/wallet_1027927.png);
+}
+
+.footerButtonText {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+}

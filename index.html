@@ -5,36 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />    
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="baseStyle.css">
+    <link rel="stylesheet" href="indexStyle.css">
+
 </head>
 <body>
-    <header>
-        <div class="headerNavBarDiv">
-            <div class="headerLeftSideDiv">
-                <ul>
-                    <li class="headerMainLogo"><a href="#"><img src="images/pngegg.png" alt="Header Main Logo"></li>
-                    <li class="headerAppName">App Name</li>
-                </ul>
-            </div>
-            <div class="headerRightSideDiv">
-                <ul>
-                    <li>
-                        <div class="headerWalletDiv">
-                            $0.00
-                            <img src="images/dollar-sign-image.png" alt="Wallet Logo">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="headerWalletDiv">
-                            $0.00
-                            <img src="images/dollar-sign-image.png" alt="Wallet Logo">
-                        </div>
-                    </li>
-                    <li class="headerProfile"><a href="#"><img src="images/blank-account-icon.png" alt="Profile Icon"></a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
+    <header id="header"></header>
     <div class="welcomeMessage">
         <p class="mainHeadingText">Beat your friends and win cash!</p>
         <p class="subHeadingText">Select & send game to challenge friends</p>
@@ -61,8 +37,8 @@
             </div>
             <div class="gameListButtons">
                 <button >View All</button>
-                <button id="left">&lt;</button>
-                <button id="right">&gt;</button>
+                <button onclick="scrollList('left', 'topGames')">&lt;</button>
+                <button onclick="scrollList('right', 'topGames')">&gt;</button>
             </div>
         </div>
         <ul class="gameList" id="topGames"></ul>
@@ -75,22 +51,17 @@
             </div>
             <div class="gameListButtons">
                 <button >View All</button>
-                <button id="left">&lt;</button>
-                <button id="right">&gt;</button>
+                <button onclick="scrollList('left', 'trendingGames')">&lt;</button>
+                <button onclick="scrollList('right', 'trendingGames')">&gt;</button>
             </div>
         </div>
         <ul class="gameList" id="trendingGames"></ul>
     </div>
-    <footer>
-        <nav>
-            <div class="footerNavBarDiv">
-                <a href="#" class="footerPlayButton"><span class="footerButtonText">Play</span></a>
-                <a href="#" class="footerWalletButton"><span class="footerButtonText">Wallet</span></a>
-            </div>
-        </nav>
-    </footer>
+    <footer id="footer"></footer>
     <script src="script.js"></script>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script src="telegramScript.js"></script>
+    <script src="header.js"></script>
+    <script src="footer.js"></script>
 </body>
 </html>
