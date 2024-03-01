@@ -36,8 +36,8 @@
     </header>
     <div class="popup" id="profilePopup">
         <div class="profileOverlay"></div>
-        <div class="profileContainter">
-            <p class="editProfileText">Edit</p>
+        <div class="profileContainter" id="mainProfile">
+            <p onclick="togglePopup('editProfilePopup')" class="editProfileText">Edit</p>
             <div class="profileBasicInfo">
                 <img src="images/blank-account-icon.png" alt="Profile Picture">
                 <p class="mainUserName">User Name</p>
@@ -45,6 +45,24 @@
             </div>
             <p class="currenciesText">Currencies</p>
             <button class="closeProfileButton" onclick="togglePopup('profilePopup'); toggleScroll()">Close</button>
+        </div>
+    </div>
+    <div class="popup" id="editProfilePopup">
+        <div class="profileContainter" id="editPage">
+            <div class="profileBasicInfo">
+                <img src="images/blank-account-icon.png" alt="Profile Picture">
+                <p class="mainUserName">User Name</p>
+                <p class="tagUserName">@UserName</p>
+            </div>
+            <form class="editPageForm">
+                <input type="text" placeholder="Name">
+                <br>
+                <input type="text" placeholder="Surname">
+            </form>
+            <div class="formButtons">
+                <button onclick="togglePopup('editProfilePopup');">Save</button>
+                <p onclick="togglePopup('editProfilePopup');">Cancel</p>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
