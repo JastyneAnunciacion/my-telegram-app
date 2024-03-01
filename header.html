@@ -29,10 +29,23 @@
                             <img src="images/dollar-sign-image.png" alt="Wallet Logo">
                         </div>
                     </li>
-                    <li class="headerProfile"><a href="profilePage.html"><img src="images/blank-account-icon.png" alt="Profile Icon"></a></li>
+                    <li class="headerProfile"><a onclick="togglePopup('profilePopup'); toggleScroll()"><img src="images/blank-account-icon.png" alt="Profile Icon"></a></li>
                 </ul>
             </div>
         </div>
     </header>
+    <div class="profileOverlay" id="profilePopup">
+        <div class="profileContainter">
+            <p class="editProfileText">Edit</p>
+            <div class="profileBasicInfo">
+                <img src="images/blank-account-icon.png" alt="Profile Picture">
+                <p>User Name</p>
+                <p>@User Name</p>
+            </div>
+            <p>Currencies</p>
+            <button onclick="togglePopup('profilePopup'); toggleScroll()">Close</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

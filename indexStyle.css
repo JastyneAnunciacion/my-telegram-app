@@ -1,3 +1,10 @@
+body {
+    background-color: rgb(6, 22, 0);
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-top: 0px;
+}
+
 .mainHeadingText {
     font-weight: bolder;
     font-size: 20px;
@@ -35,64 +42,6 @@
     background-color: rgb(255, 255, 255);
     color: black;
 }
-
-/* 
-.listOfGames {
-    padding-bottom: 70px;
-}
-
-.gameCard {
-    height: 80px;
-    display: flex;
-    align-items: center;
-}
-
-.gameCard ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    width: 100%;
-    padding: 0%;
-    margin: 0%;
-}
-
-.gameCard ul li img {
-    width: 60px;
-    height: auto;
-    border-radius: 15px;
-}
-
-.gameCardTextInfo {
-    line-height: 5px;
-    text-align: left;
-    flex-grow: 1;
-    overflow: hidden;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.gameCardTextInfo .mainHeadingText {
-    font-size: 15px;
-    margin-bottom: 0px;
-}
-
-.gameCardTextInfo .subHeadingText {
-    margin-top: 10px;
-    font-size: 13px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-} 
-
-.gameCard ul li button {
-    background-color: rgb(21, 123, 206);
-    width: 80px;
-    height: 35px;
-    border-radius: 10px;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-} */
 
 .tempImg{
     background-color: gray;

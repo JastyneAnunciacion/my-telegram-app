@@ -148,6 +148,15 @@ function highlightButton(buttonId) {
     button.classList.add('buttonSorterHighlighted');
 }
 
+function togglePopup(elementId) {
+    document.getElementById(elementId).classList.toggle("active");
+}
+
+function toggleScroll() {
+    var body = document.body;
+    body.classList.toggle("disableScroll");
+}
+
 generateGameCards('#recentlyPlayed');
 generateGameCards('#topGames');
 generateGameCards('#trendingGames');

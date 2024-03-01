@@ -8,13 +8,6 @@
     -ms-user-select: none; 
 }
 
-body {
-    background-color: rgb(6, 22, 0);
-    padding-left: 4px;
-    padding-right: 4px;
-    margin-top: 0px;
-}
-
 ::-webkit-scrollbar {
     width: 8px;
 }
