@@ -34,13 +34,14 @@
             </div>
         </div>
     </header>
-    <div class="profileOverlay" id="profilePopup">
+    <div class="popup" id="profilePopup">
+        <div class="profileOverlay"></div>
         <div class="profileContainter">
             <p class="editProfileText">Edit</p>
             <div class="profileBasicInfo">
                 <img src="images/blank-account-icon.png" alt="Profile Picture">
-                <p>User Name</p>
-                <p>@User Name</p>
+                <p class="mainUserName">User Name</p>
+                <p class="tagName">@User Name</p>
             </div>
             <p>Currencies</p>
             <button onclick="togglePopup('profilePopup'); toggleScroll()">Close</button>
