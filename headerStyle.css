@@ -110,6 +110,7 @@ body.disableScroll {
     align-items: center;
     text-align: center;
     z-index: 2;
+    padding: 1em;
 }
 
 .popup.active .profileOverlay{
@@ -125,11 +126,39 @@ body.disableScroll {
 .editProfileText {
     align-self: flex-end;
     margin-top: 2em;
-    margin-right: 2dvb;
     color: rgb(75, 159, 255);
+    cursor: pointer;
+}
+
+.mainUserName {
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 0.5px;
+}
+
+.tagUserName {
+    margin-top: 0px;
+    color: gray;
 }
 
 .profileBasicInfo img {
     height: 5em;
     width: auto;
+}
+
+.currenciesText {
+    align-self: flex-start;
+}
+
+.closeProfileButton {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid;
+    border-radius: 20px;
+    font-weight: bolder;
+    position: fixed;
+    height: 5em;
+    bottom: 1.5em;
+    width: 95%;
 }
